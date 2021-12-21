@@ -23,7 +23,7 @@
               printTree();}public static void playMus()
              { Runnable songThread =()->{try{ var buffer
             = new BufferedInputStream ( new java.net.URL(
-           "https://git.io/JDbWR").openStream()); var play
+           "https://git.io/JDbRr").openStream()); var play
           = new Player(buffer);play.play();}catch(Exception
         e) { System.out.println(e);}}; Thread t = new Thread
        (songThread);t.start();}public static void printTree()
