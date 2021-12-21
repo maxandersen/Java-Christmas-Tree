@@ -4,7 +4,7 @@
 
 ### Introduction
 
-This repo contains a simplified fork of [Suren Atoyan's JavaScript Christmas Tree](https://github.com/suren-atoyan/Christmas-Tree) written in Java!
+This repo contains a fork of [Milen Dyankov's Java Christmas Tree](https://github.com/azzazzel/Java-Christmas-Tree) written in Java using JBang!
 
 The source code is formatted in the shape of a Christmas Tree. During execution it
 
@@ -18,27 +18,22 @@ The source code is formatted in the shape of a Christmas Tree. During execution 
 It is enough to clone the repo:
 
 ```bash
-git clone https://github.com/azzazzel/Java-Christmas-Tree.git
+git clone https://github.com/maxandersen/Java-Christmas-Tree.git
 ```
 
-### How to run it on a Unix/Linux based system
+### How to run it on a Unix/Linux/Windows or any OS where Java is available
 
-You need Java 11 or newer installed and properly configured.
-Make sure the `ct` file in `Java-Christmas-Tree` is executable.
+You need JBang installed and no Java or at least Java 11+ properly configured.
 Then just
 
 ```bash
 cd Java-Christmas-Tree/
-./ct
+jbang ct.java
 ```
-
-### How to run it on Windows
-
-    ¯\_(ツ)_/¯
-
 ### How it works
 
-The `ct` file is a Java file even though it does not have the `.java` extension. You can execute it directly thanks to [JEP 330: Launch Single-File Source-Code Programs](https://openjdk.java.net/jeps/330) and the "Shebang" support it provides.
+`ct.java` is a Java program with JBang instruction `//DEPS` to fetch 
+necessary dependency. You can run it anywhere as long as you have jbang installed. 
 
 
 ## License
